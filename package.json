@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "predeploy": "vite build --base=./achk/",
-    "deploy": "gh-pages -d build --base=./achk/",
+    "deploy": "gh-pages -d build",
     "dev": "vite --host",
     "build": "vite build --base=./achk/",
     "preview": "vite preview"
