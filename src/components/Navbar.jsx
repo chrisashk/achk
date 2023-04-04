@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { close, logo, menu } from '../assets';
+import { close, new_logo, menu } from '../assets';
 import { navLinks } from '../constants';
 
 const Navbar = () => {
@@ -7,13 +7,13 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
     <nav className="w-full flex py-6 justify-between items-center navbar">
-      <img src={logo} alt="hoobank" className="w-[124px] h-[32px]" />
+      <img src={new_logo} alt="hoobank" className="w-[300px] h-[250px] invert mb-[-60px]" />
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
             className={`font-poppings font-normal cursor-pointer test-[16px] ${index == navLinks.length - 1 ? 'mr-0' : 'mr-10'} text-white`}>
-            <a href={`#${nav.id}`} /> {nav.title}
+            <a href={`#${nav.id}`}>{nav.title}</a>
           </li>
         ))}
 
@@ -33,7 +33,7 @@ const Navbar = () => {
           <li
             key={nav.id}
             className={`font-poppings font-normal cursor-pointer test-[16px] ${index == navLinks.length - 1 ? 'mr-0' : 'mb-4'} text-white`}>
-            <a href={`#${nav.id}`} /> {nav.title}
+            <a href={`#${nav.id}`}>{nav.title}</a>
           </li>
         ))}
 
