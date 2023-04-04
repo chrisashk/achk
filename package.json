@@ -5,10 +5,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "predeploy": "vite build --base=./achk/",
+    "predeploy": "vite build --base=./achk",
     "deploy": "gh-pages -d build",
     "dev": "vite --host",
-    "build": "vite build --base=./achk/",
+    "build": "vite build --base=./achk",
     "preview": "vite preview"
   },
   "dependencies": {
